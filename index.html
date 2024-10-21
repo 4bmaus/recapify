@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recapify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="static/spotify-logo.png" alt="Spotify Logo" class="spotify-logo">
+        <h1>Welcome to Recapify</h1>
+    </div>
+
+    <div class="container">
+        <h2>Select Time Range for Your Listening Data</h2>
+        <button id="loginBtn" class="btn">Log in with Spotify</button>
+
+        <div id="timeFrameSelection" style="display:none;">
+            <button class="btn" onclick="fetchData('short_term')">1 Month</button>
+            <button class="btn" onclick="fetchData('medium_term')">6 Months</button>
+            <button class="btn" onclick="fetchData('long_term')">12 Months</button>
+        </div>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
